@@ -65,12 +65,13 @@
                 </p>
             </div>
             <div class="col-12 col-md-4">
-                <div class="icon-background">
-                    <i class="fa-solid fa-mountain"></i>
-                </div>
+                
                 <p class="my-3">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
+                <div class="icon-background">
+                    <i class="fa-solid fa-mountain"></i>
+                </div>
             </div>
             <div class="col-12 col-md-4">
                 <div class="icon-background">
@@ -136,7 +137,7 @@
                 <textarea class="form-control" placeholder="Mensaje" id="mensaje" style="height: 100px"></textarea>
                 <label for="mensaje">Mensaje</label>
             </div>
-            <button type="submit" class="btn btn-primary">Enviar</button>
+            <button type="submit" class="btn btn-primary" id="enviarmensaje">Enviar</button>
         </form>
     </section>
 
@@ -144,10 +145,10 @@
         <div class="container d-flex justify-content-between align-items-center">
             <h2 class="footer-text">VIAJES CHILE</h2>
             <div class="social-links d-flex">
-                <a href="#" class="text-light mx-2"><i class="fab fa-square-github"></i></a>
-                <a href="#" class="text-light mx-2"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#" class="text-light mx-2"><i class="fab fa-twitter"></i></a>
-                <a href="#" class="text-light mx-2"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-light mx-2" data-bs-toggle="tooltip" title="GitHub"><i class="fab fa-square-github"></i></a>
+                <a href="#" class="text-light mx-2" data-bs-toggle="tooltip" title="Linkedin"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="text-light mx-2" data-bs-toggle="tooltip" title="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-light mx-2" data-bs-toggle="tooltip" title="Facebook"><i class="fab fa-facebook-f"></i></a>
             </div>
         </div>
     </footer>
@@ -155,6 +156,21 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
+    <script>
+      // Inicialización de tooltips
+      var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+          return new bootstrap.Tooltip(tooltipTriggerEl);
+      });
+      document.getElementById('contactForm').addEventListener('enviarmensaje', function(event) {
+            event.preventDefault(); 
+            alert("Este mensaje fue enviado");
+        });
+
+    
+  </script>
+  <!--alerta de mensaje, no me ha funcionado, no sé si es mi navegador o estoy haciendo mal, de todas maneras dejo el código-->
+
 
   <script src="./assets/js/script.js"></script>
     <!--jquery-->
