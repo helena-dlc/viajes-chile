@@ -1,0 +1,65 @@
+body {
+    background-color: #222424;
+}
+
+nav {
+    color: white; /* no me toma las clases de bootstrap text-light y tampoco acá*/
+    background-color: #0DCAF0;
+    opacity: 70%;
+}
+
+.card-body {
+    background-color: #0DCAF0;
+}
+
+.icon-background {
+    background-color: #0DCAF0;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px; /* Espacio debajo del ícono */
+}
+
+.icon-background i {
+    color: #fff;
+    font-size: 2rem;
+}
+
+.card {
+    background-color: #222;
+    color: #fff;
+    
+}
+
+.card .card-body {
+    background-color: #0DCAF0;
+}
+
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+form {
+    background-color: #222424 !important;
+    padding: 2rem !important;
+}
+
+footer {
+    background-color: #0DCAF0;
+    padding: 1rem 0;
+}
+
+.footer-text {
+    text-align: left;
+}
+
+.social-links {
+    font-size: 1.5rem;
+}
+.logo-image {
+    width: 60px; /* modifiqué el tamaño, porque era gigante */
+    height: auto; 
+}

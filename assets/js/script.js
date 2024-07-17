@@ -1,0 +1,1 @@
+//*no me funcionaba el código en js, lo puse en el html como script
