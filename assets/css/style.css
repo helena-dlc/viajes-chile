@@ -18,7 +18,7 @@
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: "Roboto", sans-serif;
   background: linear-gradient(135deg, var(--dark-bg) 0%, var(--charcoal) 100%);
   color: var(--white);
   line-height: 1.6;
@@ -26,7 +26,7 @@ body {
 
 /* Navbar Styles */
 .navbar-custom {
-  background: rgba(13, 115, 119, 0.95);
+  background: var(--charcoal);
   backdrop-filter: blur(10px);
   transition: all 0.3s ease;
   padding: 1rem 0;
@@ -39,7 +39,7 @@ body {
 
 .navbar-brand {
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: var(--white) !important;
   display: flex;
   align-items: center;
@@ -47,9 +47,8 @@ body {
 }
 
 .navbar-brand img {
-  width: 32px;
-  height: 32px;
-  filter: brightness(0) invert(1);
+  width: 50px;
+  height: 50px;
 }
 
 .navbar-nav .nav-link {
@@ -92,7 +91,7 @@ body {
   overflow: hidden;
   background: linear-gradient(
     135deg,
-    var(--primary-teal) 0%,
+    var(--charcoal) 0%,
     var(--secondary-teal) 50%,
     var(--accent-teal) 100%
   );
@@ -237,7 +236,7 @@ body {
 }
 
 .travel-card .card-body {
-  padding: 1.5rem;
+  padding: 2rem;
   color: var(--charcoal);
 }
 
@@ -245,16 +244,16 @@ body {
   font-size: 1.3rem;
   font-weight: 600;
   margin-bottom: 1rem;
-  color: var(--primary-teal);
+  color: var(--dark-teal);
 }
 
 .price-section {
-  background: var(--light-teal);
+  background: var(--accent-teal);
   padding: 1rem 1.5rem;
   margin: -1.5rem -1.5rem 0;
   color: var(--white);
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   font-weight: 600;
 }
@@ -273,6 +272,9 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.1);
   transition: all 0.3s ease;
   height: 100%;
+}
+h5 {
+  color: var(--light-teal);
 }
 
 .testimonio-card:hover {
@@ -324,7 +326,7 @@ body {
 }
 
 .btn-primary-custom {
-  background: var(--accent-teal);
+  background: var(--light-teal);
   border: none;
   padding: 0.75rem 2rem;
   border-radius: 25px;
@@ -333,7 +335,8 @@ body {
 }
 
 .btn-primary-custom:hover {
-  background: var(--secondary-teal);
+  background: var(--accent-teal);
+  color: white;
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
@@ -351,6 +354,9 @@ body {
   margin-right: 1rem;
   color: var(--accent-teal);
   width: 20px;
+}
+footer {
+  padding: 2.5rem;
 }
 
 /* Animations */
@@ -398,31 +404,4 @@ body {
   .travel-card {
     margin-bottom: 1.5rem;
   }
-}
-
-/* DESTACADOS – HORIZONTAL SCROLLER ------------------------*/
-.destacados-track {
-  display: flex;
-  animation: scroll 35s linear infinite;
-  gap: 2rem;
-  padding: 1rem;
-}
-
-.destacados-track img {
-  width: 280px;
-  height: 190px;
-  object-fit: cover;
-  border-radius: 12px;
-}
-
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-footer {
-  background-color: #14a085;
 }
